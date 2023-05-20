@@ -8,9 +8,9 @@ import java.util.List;
 
 @Repository
 public class StudentRepository {
-    private HashMap<String,Student> studentDB = new HashMap<>(); // studentName : student obj
-    private HashMap<String, Teacher> teacherDB = new HashMap<>(); //teacherName : teacher obj
-    private HashMap<String, List<String>> teacherAndItsDB = new HashMap<>(); // teacherName : list of students
+    HashMap<String,Student> studentDB = new HashMap<>(); // studentName : student obj
+    HashMap<String, Teacher> teacherDB = new HashMap<>(); //teacherName : teacher obj
+    HashMap<String, List<String>> teacherAndItsDB = new HashMap<>(); // teacherName : list of students
     public void addStudent(Student student) {
         studentDB.put(student.getName(),student);
     }
